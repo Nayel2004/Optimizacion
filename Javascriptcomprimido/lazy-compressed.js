@@ -1,0 +1,1 @@
+const images=document.querySelectorAll(".producto-imagen");let options={rootMargin:"-10% 0px",threshold:0};function handleIntersect(a){console.log(a),a.forEach(a=>{a.isIntersecting&&(a.target.style.opacity=1)})}const observer=new IntersectionObserver(handleIntersect,options);images.forEach(a=>{observer.observe(a)});

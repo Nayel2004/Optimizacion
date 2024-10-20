@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./csscomprimido/maincompri.css">
+    <link rel="stylesheet" href="./csscomprimido/mediaqueriescompri.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1>OkTech</h1>
+            <button class="open-menu" id="open-menu"><i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside class="aside-visible">
+            <button id = "close-menu" class="close-menu"><i class="bi bi-x-lg"></i></button>
+            <header>
+                <img class= "logo" src="./img/logo.png" alt="logo">
+            </header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="boton-volver" href="./index.html">
+                        <i class="bi bi-arrow-return-left"></i> Seguir Comprando 
+                    </a>
+                </li>
+                <li>
+                    <a class="boton-carrito" href="./carrito.html">
+                        <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2024 OKTech</p>
+        </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal"> Carrito </h2>
+            <div class="contenedor-carrito">
+                <p id ="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./img/Huawei.jpg" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Titulo</small>
+                            <h3>Huawei</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>800.000</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>800.000</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+                    
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./img/Huawei.jpg" alt="">
+                        <div class="carrito-producto-titulo">
+                            <small>Titulo</small>
+                            <h3>Huawei</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>800.000</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>800.000</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    </div>
+
+                </div>
+
+                <div id ="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar"> Vaciar Carrito </button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div id="carrito-acciones-total" class="carrito-acciones-total">
+                            <p>Total</p>
+                            <p>$160000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
+                    </div>
+                </div>
+                <p id ="carrito-comprado" class="carrito-comprado disabled"> Muchas Gracias Por Tu Compra.  <i class="bi bi-emoji-laughing-fill"></i></p>
+            </div>
+        </main>
+    </div>
+
+    
+    <script src="./Javascriptcomprimido/carrito-compressed.js"></script>
+    <script src="./Javascriptcomprimido/mediaqueries-compressed.js"></script>
+    
+    
+
+    
+</body>
+</html>
